@@ -1,0 +1,277 @@
+html, body {
+    height:100%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/*LAYOUT COMPONENTS STYLES*/
+.wrapper {
+    height: 770px;
+    width: 1020px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background: grey;
+}
+
+.header {
+    height: 79px;
+    padding-left: 59px;
+    background: linear-gradient(to bottom, #2a3d52, #243342);
+}
+
+.main {
+    padding: 15px 15px 74px 74px;
+    height: 1px;
+    min-height: 100%;
+    background-color: white;
+}
+
+.aside {
+    width: 59px;
+    position: absolute;
+    top: 0;
+    bottom: 140px;
+    background: linear-gradient(to bottom, #2a3d52, #243342);
+}
+/*HEADER COMPONENTS STYLES*/
+.rounded-area {
+    width: 347px;
+    height: 33px;
+    line-height: 29px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 23px;
+    margin-left: 17px;
+    border-radius: 15px;
+    font-family: "Open Sans";
+}
+
+.drop-area {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #202e3e;
+    color: #627991;
+    text-align: center;
+    background-color: #202e3e;
+}
+
+.drop-area .browse {
+    color: #5c8fc5;
+    cursor: pointer;
+}
+
+.drop-area .fa {
+    font-size: 18px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.search {
+    border-top:1px solid #182432;
+    background-color: #182432;
+    font-style: italic;
+    font-family: "Open Sans";
+    color: #627991;
+}
+.search .fa {
+    font-size:18px;
+    margin-left:10px;
+    margin-right:8px;
+    vertical-align: middle;
+}
+.login {
+    display: inline-block;
+    overflow: hidden;
+    height: 33px;
+    line-height: 33px;
+    margin-top: 23px;
+    margin-left: 120px;
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: #5c8fc5;
+}
+
+.login .fa {
+    margin-right: 5px;
+}
+
+/*ASIDE COMPONENTS STYLES*/
+.nav-list_item {
+    position: relative;
+    width: 100%;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    font-size: 30px;
+    color: #5c8fc5;
+}
+
+.nav-list_item:last-child {
+    color: white;
+    background-color: #14212e;
+}
+
+.nav-list_item:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #14212e;
+}
+
+.nav-list_item .messages {
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    top: 10px;
+    left: 30px;
+    background-color: red;
+    border: 2px solid #2a3d52;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19px;
+    color: white;
+}
+
+/*PICTURE STYLES*/
+.picture-holder {
+    float: left;
+    position: relative;
+    width: 715px;
+    height: 65%;
+    background-size: cover;
+}
+
+.tags-block {
+    float: right;
+    width: 210px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+/*TAGS LIST STYLES*/
+.tag {
+    margin-top: 17px;
+    font-weight: 100;
+    font-family: "Open Sans";
+    cursor: pointer;
+}
+
+.tag-icon {
+    float: left;
+    padding-left: 6px;
+    color: yellow;
+    opacity: 0.3;
+}
+
+.tag-icon.active {
+    opacity: 1;
+}
+
+.tag-text {
+    float: right;
+    width: 180px;
+    line-height: 17px;
+    word-wrap: break-word;
+}
+
+.tag-text.active {
+    font-weight: bold;
+}
+
+/*IMAGE TOOLTIPS STYLES*/
+.custom-tooltip {
+    z-index: 1000;
+}
+
+.custom-tooltip:hover {
+    cursor: pointer;
+}
+
+.custom-tooltip.active .tooltip-inner {
+    opacity: 1;
+}
+
+.custom-tooltip.active.tooltip.top .tooltip-arrow {
+    opacity: 1;
+}
+
+.tooltip-inner {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    opacity: 0.3;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: yellow;
+    opacity: 0.3;
+}
+
+.popover-buttons {
+    margin-top: 10px;
+}
+
+/*CUSTOM RADIO STYLES*/
+.radio-holder {
+    display: inline-block;
+    margin: 0 18px 25px 3px;
+}
+
+.radio {
+    vertical-align: top;
+    width: 17px;
+    height: 17px;
+    margin: 0 3px 0 0;
+}
+
+.radio + label {
+    cursor: pointer;
+    font-family: "Open Sans";
+}
+
+.radio:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 24px;
+}
+
+.radio:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #CDD1DA;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+.radio:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: yellow;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.radio:checked + label:after {
+    opacity: 1;
+}
